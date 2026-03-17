@@ -11,6 +11,15 @@ databaseChangeLog:
   - changeSet:
       id: task_1-2
       author: ozzyfrost
+      comment: create_test_schema
+      changes:
+        - sqlFile:
+            path: create_schema_test_schema.sql
+            relativeToChangelogFile: true
+            endDelimiter: "go;"
+  - changeSet:
+      id: task_1-3
+      author: ozzyfrost
       comment: create_table_test_schema_customer
       changes:
         - sqlFile:

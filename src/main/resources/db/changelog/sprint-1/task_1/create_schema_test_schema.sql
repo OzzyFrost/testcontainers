@@ -1,0 +1,2 @@
+CREATE SCHEMA IF NOT EXISTS test_schema;
+go;
